@@ -39,6 +39,20 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ad436c664da484b3bab0ab9477b7a4d5, type: 2}
   - {fileID: 11400000, guid: 8de3058e6acc84191a1fad5276e1b130, type: 2}
   - {fileID: 11400000, guid: 49be9b72d530e461d8d72f01e25c745f, type: 2}
+  - {fileID: 11400000, guid: b7bf3af1d790e8144bb267183a8a1c79, type: 2}
+  - {fileID: 11400000, guid: 6f599504541acc749b98ef5e09fa535d, type: 2}
+  - {fileID: 11400000, guid: dc92f96e403012d44931af1b36e9b988, type: 2}
+  - {fileID: 11400000, guid: 93b401c2db4a6dc45a348ae56d478e6e, type: 2}
+  - {fileID: 11400000, guid: 791cfdcb81927034e99f7e08551cb81c, type: 2}
+  - {fileID: 11400000, guid: 812970edf93d0a048835cf7e837beb44, type: 2}
+  - {fileID: 11400000, guid: eaf396dc87109ed48b0e12a5418883dd, type: 2}
+  - {fileID: 11400000, guid: 3b2f9bc071d61e445b4a8112fdc90623, type: 2}
+  - {fileID: 11400000, guid: 2fe46281341b10546adc42e82d120c09, type: 2}
+  - {fileID: 11400000, guid: 44450ca2e36efd142817158f727dac9e, type: 2}
+  - {fileID: 11400000, guid: 92495657ab9b20346a8633b20e3c24ac, type: 2}
+  - {fileID: 11400000, guid: b02b8577cb763d74eb7a5ffc961806d7, type: 2}
+  - {fileID: 11400000, guid: b0a24214e3fad6147849774903634b52, type: 2}
+  - {fileID: 11400000, guid: ddc6a4d447ad93d43889f49f172cd016, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1

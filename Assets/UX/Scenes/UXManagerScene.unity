@@ -726,6 +726,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 446fc7fee4cf2ad4daa02222a84869c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 2030326182}
+  shootScript: {fileID: 89935710}
   m_PlacedPrefab: {fileID: 3452645503517675339, guid: 23b79ce467b139a448c794ccf73724f1,
     type: 3}
   m_MaxNumberOfObjectsToPlace: 1

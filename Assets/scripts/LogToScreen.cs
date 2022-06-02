@@ -13,7 +13,7 @@ public class LogToScreen : MonoBehaviour
         Debug.Log("Started up Logging.");
     }
 
-    void OnEnable()
+    void OnEnabled()
     {
         Application.logMessageReceived += HandleLog;
     }
@@ -36,5 +36,11 @@ public class LogToScreen : MonoBehaviour
         GUILayout.BeginArea(new Rect(Screen.width - 400, 0, 400, Screen.height));
         GUILayout.Label("\n", string.Join("\n", myLogQueue.ToArray()));
         GUILayout.EndArea();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
     }
 }

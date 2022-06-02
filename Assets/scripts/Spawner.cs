@@ -9,7 +9,8 @@ public class Spawner : MonoBehaviour
 
     // References to planes prefab
     public GameObject redPlane;
-
+    public GameObject greenPlane;
+    public GameObject bluePlane;
     // Turret position
     private Vector3 turretPosition;
 
@@ -54,5 +55,25 @@ public class Spawner : MonoBehaviour
     public void spawnRedPlane()
     {
         spawnPlane(redPlane);
+    }
+    public void spawnGreenPlane()
+    {
+        spawnPlane(greenPlane);
+    }
+    public void spawnBluePlane()
+    {
+        spawnPlane(bluePlane);
+    }
+    public void spawnRedPlaneAfterTime(float time)
+    {
+        Invoke("spawnRedPlane", time);
+    }
+    public void spawnGreenPlaneAfterTime(float time)
+    {
+        Invoke("spawnGreenPlane", time);
+    }
+    public void spawnBluePlaneAfterTime(float time)
+    {
+        Invoke("spawnBluePlane", time);
     }
 }

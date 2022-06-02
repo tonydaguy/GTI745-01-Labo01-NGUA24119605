@@ -102,8 +102,23 @@ public class Projectile : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.tag == "RedPlane")
+        if (other.transform.tag == "RedPlane"|| other.transform.tag == "GreenPlane" || other.transform.tag == "BluePlane")
         {
+            switch (other.transform.tag)
+            {
+                case "RedPlane":
+                    Spawner.Instance.spawnRedPlaneAfterTime(2.0f);
+                    break;
+                case "GreenPlane":
+                    Spawner.Instance.spawnGreenPlaneAfterTime(2.0f);
+                    break;
+                case "BluePlane":
+                    Spawner.Instance.spawnBluePlaneAfterTime(2.0f);
+                    break;
+                default:
+                    Debug.Log("Problem in Projectile.OnTriggerEnter with tag: " + other.transform.tag);
+                    break;
+            }
             Destroy(other.transform.gameObject);
             Explosion();
         }

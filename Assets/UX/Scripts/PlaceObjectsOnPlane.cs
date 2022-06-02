@@ -72,6 +72,8 @@ public class PlaceObjectsOnPlane : MonoBehaviour
                     {
                         Spawner.Instance.setTurretPosition(hitPose.position);
                         Spawner.Instance.spawnRedPlane();
+                        Spawner.Instance.spawnGreenPlane();
+                        Spawner.Instance.spawnBluePlane();
 
                         spawnedObject = Instantiate(m_PlacedPrefab, hitPose.position, hitPose.rotation);
                         shootScript.GetComponent<Shoot>().turret = spawnedObject;

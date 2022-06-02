@@ -40,12 +40,12 @@ public class Projectile : MonoBehaviour {
             Explosion();
             return;
         }
-
+        /*
         if (transform.position.y < -0.2F)
         {
             Explosion();
         }
-
+        */
         boomTimer -= Time.deltaTime;
         if (boomTimer < 0)
         {
@@ -102,13 +102,9 @@ public class Projectile : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.tag == "Player")
+        if (other.transform.tag == "RedPlane")
         {
-            Vector3 dir = other.transform.position - transform.position;
-            //Vector3 knockBackPos = other.transform.position * (-dir.normalized * knockBack);
-            Vector3 knockBackPos = other.transform.position + (dir.normalized * knockBack);
-            knockBackPos.y = 1;
-            other.transform.position = knockBackPos;
+            Destroy(other.transform.gameObject);
             Explosion();
         }
     }

@@ -37,10 +37,4 @@ public class LogToScreen : MonoBehaviour
         GUILayout.Label("\n", string.Join("\n", myLogQueue.ToArray()));
         GUILayout.EndArea();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
